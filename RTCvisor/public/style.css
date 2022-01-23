@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1920px){
+    .video, #video-grid{
+      width: 1100px!important;
+    }
+    .video{
+      margin: 17% 7% 0 15%!important;  
+      padding-bottom: 10px;
+    }
+    #video-grid{
+      padding: 20px!important;
+      grid-template-columns: repeat(auto-fill, 550px)!important;
+      grid-auto-rows: 350px!important;
+    }
+    .video{
+     margin: 5% 7% 0 10%;
+     border-radius: 7px;
+    } 
+  }
+  @media only screen and (max-width: 1870px){
+    .video, #video-grid{
+      width: 800px!important;
+    }
+    .video{
+      padding-bottom: 7px;
+    }
+    #video-grid{
+      padding: 14px!important;
+      grid-template-columns: repeat(auto-fill, 400px)!important;
+      grid-auto-rows: 250px!important;
+    }
+  }
+  @media only screen and (max-width: 1270px){
+    .video, #video-grid{
+      width: 400px!important;
+    }
+    #video-grid{
+      grid-template-columns: repeat(auto-fill, 400px)!important;
+      grid-auto-rows: 250px!important;
+    }
+    #maket{
+      padding-bottom: 40px;
+    }
+  } 
+  body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 15px;
+    color: #333;
+    height:100%;
+    width:100%;
+  }
+  a{
+    color:none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  button{
+    opacity: 0.3;
+    text-align: center;
+    line-height: 100%;
+  }
+  .nav{
+    background: rgba(30, 26, 28, 1);
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding:0 1.5% 0 1.5%;
+    height: 100%;
+    width: 50px;
+  }
+  .nav .logo{
+    margin-top:80px;
+    margin-bottom: 250px;
+    height: 50px;
+    width: 50px;
+  }
+  .phone img, .cam img, .mic img{
+    width: 40px;
+    border-radius: 10px;
+  }
+  .phone, .cam, .mic{
+    border-radius: 10px;
+  }
+  button:hover{
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+  * html{
+    height:100%;
+  }
+  #maket{
+    background: #24201e url(_bi.jpg) no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+    min-height:100%;
+    width: 100%;
+  }
+  #header{
+    background: #333;
+    color:#fff;
+    font-size: 25px;
+    height:65px;
+    line-height: 65px;
+    margin: 0;
+    padding-left:7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  #container{
+    padding: 0 5% 0 5%;
+    height: 97%;
+    overflow: hidden;
+    width: 80%;
+  }
+  .video{
+    margin: 5% 7% 0 10%;
+    border-radius: 7px;
+  }
+  #video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-auto-rows: 250px;
+    border-radius: 7px;
+    overflow:hidden;
+    padding: 9px;
+  }   
+  video {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    margin: 5px !important;
+  }
+  .clear{
+    clear:both;
+  }

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>FirebaseRTC</title>
+</head>
+<body>
+
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">Keep it 100 </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">Service</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                <a class="nav__link" href="#" data-scroll="#works">Advanced settings</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
+
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+
+<div class="page">
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h2 class="intro__suptitle">Nothing is impossible! Just start doing something!</h2>
+                <h1 class="intro__title">Welcome to Firebase</h1>
+
+                <a class="btn" href="#">Learn More</a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__item active">
+                        <span class="slider__num">01</span>
+                        <span class="slider__text">Intro</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">02</span>
+                        <span class="slider__text">Work</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">03</span>
+                        <span class="slider__text">About</span>
+                    </div>
+                    <div class="slider__item">
+                        <span class="slider__num">04</span>
+                        <span class="slider__text">Contacts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="section" id="about">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Instructions</h3>
+                <h2 class="section__title"></h2>
+                <div class="section__text">
+                <pl>
+                     We're here to help you connect, communicate, and express your ideas so you can get more done together!
+                    FirebaseRTC is very easy to use. You do not need to waste your time on subscribing ,registration or installation of this service.
+
+                </pl>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/1.jpg" alt="">
+                        </div>
+                        <div class="card__text">Step 1</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/2.jpg" alt="">
+                        </div>
+                        <div class="card__text">Step 2</div>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/3.jpg" alt="">
+                        </div>
+                        <div class="card__text">Step 3</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section" id="services">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">We are working on</h3>
+                <h2 class="section__title">improving our server</h2>
+            </div>
+
+            <div class="services">
+                <div class="services__item  services__item--border">
+                    <img class="services__icon" src="assets/images/services/photography.png" alt="">
+
+                    <div class="services__title">Video</div>
+                    <div class="services__text">quality</div>
+                </div>
+                <div class="services__item  services__item--border">
+                    <img class="services__icon" src="assets/images/services/webdesign.png" alt="">
+
+                    <div class="services__title">Web Design</div>
+                    <div class="services__text">To design the most beautiful and user-friendly interface. </div>
+                </div>
+                <div class="services__item  services__item--border">
+                    <img class="services__icon" src="assets/images/services/creativity.png" alt="">
+
+                    <div class="services__title">Customer service via chat or phone.</div>
+                    <div class="services__text">We plan to create a chat bot that you can address in order to get help.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="assets/images/services/seo.png" alt="">
+
+                    <div class="services__title">Activity log</div>
+                    <div class="services__text">Develop an activity log so that our customers can check their activity history.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="assets/images/services/css-html.png" alt="">
+
+                    <div class="services__title">Security</div>
+                    <div class="services__text">Ensure complete confidentiality of your conferences on the server.</div>
+                </div>
+                <div class="services__item">
+                    <img class="services__icon" src="assets/images/services/digital.png" alt="">
+
+                    <div class="services__title"> Microphone settings</div>
+                    <div class="services__text">Develop an activity log so that our customers can check their activity history</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="section  section--devices">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">For all devices</h3>
+                <h2 class="section__title">Unique design</h2>
+            </div>
+
+            <div class="devices">
+                <img class="devices__item" src="assets/images/ipad.png" alt="">
+                <img class="devices__item  devices__item--iphone" src="assets/images/iphone.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Service</h3>
+                <h2 class="section__title">Visit our service</h2>
+                <div class="section__text">
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="wedo">
+                <div class="wedo__item">
+                    <img class="wedo__img" src="assets/images/wedo.jpg" alt="">
+                </div>
+
+                <div class="wedo__item">
+
+                    <div class="accordion">
+                        <div class="accordion__item" data-collapse="#wedo_1">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/images/services/photography.png" alt="">
+                                <div class="accordion__title">FirebaseRTS</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_1">
+                                <p>click on the link:<a href = "https://rtcvisorn.web.app">https://rtcvisorn.web.app/</a></p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item active" data-collapse="#wedo_2">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/images/services/creativity.png" alt="">
+                                <div class="accordion__title"><b>RTCvisor</b></div>
+                            </div>
+                            <div class="accordion__content" id="wedo_2">
+                                <p><u>click on the link:</u><a href = "https://rtcvisor-8bb7c.web.app">https://rtcvisor-8bb7c.web.app</a></p>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item" data-collapse="#wedo_3">
+                            <div class="accordion__header">
+                                <img class="accordion__icon" src="assets/images/services/webdesign.png" alt="">
+                                <div class="accordion__title">ReactApp</div>
+                            </div>
+                            <div class="accordion__content" id="wedo_3">
+                                <p>click on the link:<a href = "https://fir-rtc-796a9.web.app">"https://fir-rtc-796a9.web.app/"</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="section  section--gray">
+        <div class="container">
+            <div class="reviews">
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                            <div class="reviews__text">“Nothing is impossible! Just start doing something!”</div>
+                            <div class="reviews__author">Our team motto</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                            <div class="reviews__text">“Nothing is impossible! Just start doing something!”</div>
+                            <div class="reviews__author">Our team motto</div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <section class="section" id="works">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Advanced settings</h3>
+                <h2 class="section__title">These are backgrounds that can be changed in our server</h2>
+                <div class="section__text">
+                    <p>You can adjust the background in the Settings section. A new version will be released soon!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/1.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/2.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/3.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/4.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/5.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__col">
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/6.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+                <div class="works__item">
+                    <img class="works__image" src="assets/images/works/7.jpg" alt="">
+                    <div class="works__info">
+                        <div class="works__title">creatively compatible</div>
+                        <div class="works__text">Keep it 100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="section">
+        <div class="container">
+
+            <div class="reviews">
+
+                <div data-slider>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                            <div class="reviews__text">“Our motto: Nothing is imposible! Just start doing something!”</div>
+                            <div class="reviews__author">Keep it 100</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="blog">
+        <div class="container">
+
+            <div class="section__header">
+                <h3 class="section__suptitle">Our stories</h3>
+                <h2 class="section__title">Latest blog</h2>
+            </div>
+
+            <div class="blog">
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="assets/images/blog/1.jpg" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Keep
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">Nothing is imposible!</a>
+                        </div>
+                        <div class="blog__text">These are backgrounds that can be changed in our server</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 542
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="assets/images/blog/2.jpg" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Keep
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">Develop an activity log so that our customers can check their activity history.</a>
+                        </div>
+                        <div class="blog__text">These are backgrounds that can be changed in our server</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 542
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="blog__header">
+                        <a href="#">
+                            <img class="blog__photo" src="assets/images/blog/3.jpg" alt="">
+                        </a>
+                        <div class="blog__date">
+                            <div class="blog__date-day">15</div>
+                            Keep
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__title">
+                            <a href="#">These are backgrounds that can be changed in our server</a>
+                        </div>
+                        <div class="blog__text">These are backgrounds that can be changed in our server.</div>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog-stat">
+                            <span class="blog-stat__item">
+                                <i class="far fa-eye"></i> 542
+                            </span>
+                            <span class="blog-stat__item">
+                                <i class="far fa-comment-dots"></i> 17
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+  
+    <section class="section  section--map">
+        <div class="container">
+        </div>
+    </section>
+
+
+   
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__col  footer__col--first">
+                    <div class="footer__logo">Keep it 100</div>
+                    <div class="footer__text">Nothing is impossible! Just start doing something!</div>
+
+                    <div class="footer__social">
+                        <div class="footer__social-header">
+                            <b>15k</b> followers
+                        </div>
+                        <div class="footer__social-content">
+                            Follow Us:
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="subscribe" action="/" method="post">
+                        <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
+                        <button class="subscribe__btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer__col  footer__col--second">
+                    <div class="footer__title">Contact</div>
+
+                    <div class="blogs">
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/1.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#"><p>address: Akademika Yangelya Street 7, Kyiv, 02000</p></a>
+                                <div class="blogs__date">Keep it 100, 2022</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/2.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#"> <p>email adress:<a href = "#">luchovskayana@gmail.com</a></p>
+                                <div class="blogs__date">Keep it 100, 2022
+
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/3.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">contact us through   bot</a>
+                                <div class="blogs__date">Keep it 100, 2022</div>
+                            </div>
+                        </div>
+                
+                                </a></div>
+
+                <div class="footer__col  footer__col--third">
+                    <div class="footer__title">Instagram</div>
+
+                    <div class="instagram">
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/1.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/2.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/3.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/4.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/5.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/6.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/7.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/8.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/9.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+           </div>
+
+
+
+    </footer>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+</body>
+</html>

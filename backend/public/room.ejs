@@ -4,28 +4,225 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
   <script>
     const ROOM_ID = "<%= roomId %>"
   </script>
   <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
-  <script src="socket.io.js" defer></script>
+  <script src="/socket.io/socket.io.js" defer></script>
   <script src="script.js" defer></script>
   <title>RTCvisor</title>
   <style>
+    @media only screen and (max-width: 1920px){
+      .video, #video-grid{
+        width: 1100px!important;
+      }
+      .video{
+        margin: 17% 7% 0 15%!important;  
+        padding-bottom: 10px;
+      }
+      #video-grid{
+        padding: 20px!important;
+        grid-template-columns: repeat(auto-fill, 550px)!important;
+        grid-auto-rows: 350px!important;
+      }
+      .video{
+       margin: 5% 7% 0 10%;
+       border-radius: 7px;
+      } 
+    }
+    @media only screen and (max-width: 1870px){
+      .video, #video-grid{
+        width: 800px!important;
+      }
+      .video{
+        padding-bottom: 7px;
+      }
+      #video-grid{
+        padding: 14px!important;
+        grid-template-columns: repeat(auto-fill, 400px)!important;
+        grid-auto-rows: 250px!important;
+      }
+    }
+    @media only screen and (max-width: 1270px){
+      .video, #video-grid{
+        width: 400px!important;
+      }
+      #video-grid{
+        grid-template-columns: repeat(auto-fill, 400px)!important;
+        grid-auto-rows: 250px!important;
+      }
+      #maket{
+        padding-bottom: 40px;
+      }
+    } 
+    body, html{
+      margin: 0;
+      padding: 0;
+      font-family: 'Kaushan Script', sans-serif;
+      font-size: 15px;
+      color: #333;
+      height:100%;
+      width:100%;
+    }
+    a{
+      color:none;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    button{
+      opacity: 0.3;
+      text-align: center;
+      line-height: 100%;
+    }
+    .nav{
+      background: rgba(30, 26, 28, 1);
+      bottom: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      padding:0 1.5% 0 1.5%;
+      height: 100%;
+      width: 50px;
+    }
+    .nav .logo{
+      margin-top:80px;
+      margin-bottom: 250px;
+      height: 50px;
+      width: 50px;
+    }
+    .phone img, .cam img, .mic img{
+      width: 40px;
+      border-radius: 10px;
+    }
+    .phone, .cam, .mic{
+      border-radius: 10px;
+    }
+    button:hover{
+      opacity: 1;
+      transition: 0.3s ease;
+    }
+    * html{
+      height:100%;
+    }
+    #maket{
+      background: #24201e url(_bi.jpg) no-repeat;
+      background-size:cover;
+      margin: 0 auto;
+      min-height:100%;
+      width: 100%;
+    }
+    #header{
+      background: #333;
+      color:#fff;
+      font-size: 25px;
+      height:65px;
+      line-height: 65px;
+      margin: 0;
+      padding-left:7%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    #container{
+      padding: 0 5% 0 5%;
+      height: 97%;
+      overflow: hidden;
+      width: 80%;
+    }
+    .video{
+      margin: 5% 7% 0 10%;
+      border-radius: 7px;
+    }
     #video-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 300px);
-      grid-auto-rows: 300px;
-    }
-    
+      grid-template-columns: repeat(auto-fill, 400px);
+      grid-auto-rows: 250px;
+      border-radius: 7px;
+      overflow:hidden;
+      padding: 9px;
+    }   
     video {
-      width: 100%;
+      width: 90%;
       height: 100%;
       object-fit: cover;
+      border-radius: 7px;
+      margin: 5px !important;
+    }
+    .clear{
+      clear:both;
     }
   </style>
 </head>
+
 <body>
-  <div id="video-grid"></div>
+  <div id="maket">
+  <div id="header">
+    <p>RTCvisor</p>
+  </div>
+  <div id="container">
+    <div class="video">
+      <div id="video-grid"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="nav">
+      <img src="logo.png" class="logo">
+      <button class="mic" jscontroller="soHxf" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd" jsname="BOHaEe" data-disable-idom="true" aria-label="Включить микрофон (Ctrl&nbsp;+&nbsp;D)" data-tooltip-enabled="true" data-tooltip-id="tt-c3" data-tooltip-x-position="3" data-tooltip-y-position="2" role="button" data-is-muted="true">
+        <a href="#" onclick="const off=function(){
+          local_stream.getAudioTracks()[0].enabled = !local_stream.getAudioTracks()[0].enabled;
+      };">
+        <div jsname="s3Eaab" class="VfPpkd-Bz112c-Jh9lGc">
+        </div>
+        <div jsaction="erbPoe:Hfiwve" jscontroller="UsOgXc" class="SUtDBe a7Zbzb">
+          <div jsaction="M8Qplc:BE5wSe;sO4MKe:Z1hKWc" aria-hidden="true" jscontroller="WaSQmd" data-icon-type="4" class="IYwVEf uB7U9e">
+            <div class="oTVIqe BcUQQ" jsname="qmYRK" aria-hidden="true">
+            </div>
+            <span class="zYrqtc thO1y" aria-hidden="true">
+              <img focusable="false" viewBox="0 0 24 24" src="mic.png" class="mic">
+            </span>
+          </div>
+        </div>
+        </a>
+      </button>
+      <button class="cam" jscontroller="soHxf" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd" jsname="BOHaEe" data-disable-idom="true" aria-label="Включить камеру (Ctrl&nbsp;+&nbsp;E)" data-tooltip-enabled="true" data-tooltip-id="tt-c4" data-tooltip-x-position="3" data-tooltip-y-position="2" role="button" data-is-muted="true">
+        <a href="#" onclick="stream.getTracks().forEach(track => track.stop())">
+        <div jsname="s3Eaab" class="VfPpkd-Bz112c-Jh9lGc">
+        </div>
+        <div jsaction="M8Qplc:BE5wSe;sO4MKe:Z1hKWc" aria-hidden="true" jscontroller="WaSQmd" data-icon-type="1" class="IYwVEf">
+          <div class="oTVIqe BcUQQ" jsname="qmYRK" aria-hidden="true">
+          </div>
+          <span class="zYrqtc thO1y" aria-hidden="true">
+            <img class="cam" focusable="false" viewBox="0 0 24 24" src="cam.png">
+          </span>
+        </div>
+        </a>
+      </button>
+      <button>
+        <a href="#" onclick="if (confirm('Вы действительно хотите закрыть страницу?')) {
+          window.close();
+        }; return false;">
+        <div jsaction="erbPoe:Hfiwve" jscontroller="UsOgXc" class="phone">
+          <div jsaction="M8Qplc:BE5wSe;sO4MKe:Z1hKWc" aria-hidden="true" jscontroller="WaSQmd" data-icon-type="4" class="IYwVEf uB7U9e">
+            <div class="oTVIqe BcUQQ" jsname="qmYRK" aria-hidden="true">
+            </div>
+            <span class="cR8Azd bkl1qf" aria-hidden="true">             
+              <img viewBox="0 0 16 16" class="phone" fill="currentColor" src="phone.png">
+                <path fill-rule="evenodd" d="M3.925 1.745a.636.636 0 0 0-.951-.059l-.97.97c-.453.453-.62 1.095-.421 1.658A16.47 16.47 0 0 0 5.49 10.51a16.47 16.47 0 0 0 6.196 3.907c.563.198 1.205.032 1.658-.421l.97-.97a.636.636 0 0 0-.06-.951l-2.162-1.682a.636.636 0 0 0-.544-.115l-2.052.513a1.636 1.636 0 0 1-1.554-.43L5.64 8.058a1.636 1.636 0 0 1-.43-1.554l.513-2.052a.636.636 0 0 0-.115-.544L3.925 1.745zM2.267.98a1.636 1.636 0 0 1 2.448.153l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.471 17.471 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969zm7.879-.834a.5.5 0 0 1 .708 0L13 2.293 15.146.146a.5.5 0 0 1 .708.708L13.707 3l2.147 2.146a.5.5 0 0 1-.708.708L13 3.707l-2.146 2.147a.5.5 0 0 1-.708-.708L12.293 3 10.146.854a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </span>          
+          </div>
+        </a>  
+      </button>
+    </div>
+
+  </div>
+  <div class="clear">
+  </div>
+  </div>
 </body>
 </html>
